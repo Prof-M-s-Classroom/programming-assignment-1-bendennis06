@@ -85,13 +85,11 @@ public:
             }
             head = wayPoint;
         }
-
         //go to node at index n-1
         Node<T>* curr = head;
         for (int i=0; i<index-1 && curr!=nullptr;i++) {
             curr = curr->next;
         }
-
         //check if index is out of bounds
         if (curr == nullptr) {
             cout<<"index out of bounds"<<endl;
@@ -228,6 +226,7 @@ public:
         int counter = 0;
         while (curr != nullptr) {
             if (counter == index) {
+                cout << "Node at index " << index << ": " << curr->data << endl;
                 return curr;
             }
             counter++;

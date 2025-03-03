@@ -15,13 +15,13 @@ int main() {
     SpaceRoute<string> voyagerRoute;
 
 
-     voyagerRoute.addWaypointAtEnd(mars);
-     voyagerRoute.addWaypointAtEnd(jupiter);
-     voyagerRoute.addWaypointAtEnd(saturn);
-     voyagerRoute.addWaypointAtBeginning(earth);
-     voyagerRoute.addWaypointAtIndex(2, venus);
-     voyagerRoute.removeWaypointAtBeginning();
-     voyagerRoute.removeWaypointAtEnd();
+    voyagerRoute.addWaypointAtEnd(mars);
+    voyagerRoute.addWaypointAtEnd(jupiter);
+    voyagerRoute.addWaypointAtEnd(saturn);
+    voyagerRoute.addWaypointAtBeginning(earth);
+    voyagerRoute.addWaypointAtIndex(2, venus);
+    voyagerRoute.removeWaypointAtBeginning();
+    voyagerRoute.removeWaypointAtEnd();
 
      cout << "Voyager Route (Forward):\n";
     voyagerRoute.traverseForward();
@@ -37,7 +37,7 @@ int main() {
 
      voyagerRoute.setWaypoint(1, earth);
      voyagerRoute.print();
-    //
-    //
+
+
      return 0;
 }
